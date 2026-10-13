@@ -42,6 +42,11 @@ a { color: inherit; text-decoration: none; }
 .nav-left, .nav-right {
   display: flex;
   gap: 32px;
+  flex: 1;
+}
+
+.nav-right {
+  justify-content: flex-end;
 }
 
 .nav-left a, .nav-right a {
@@ -50,6 +55,15 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--ink-light);
   transition: color 0.2s;
+}
+
+.nav-right .nav-divider {
+  width: 1px;
+  height: 12px;
+  background: var(--ink-faint);
+  opacity: 0.4;
+  align-self: center;
+  flex-shrink: 0;
 }
 
 .nav-left a:hover, .nav-right a:hover { color: var(--ink); }
@@ -193,9 +207,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .creator-date {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--ink-faint);
 }
@@ -301,6 +315,169 @@ a { color: inherit; text-decoration: none; }
 
 .scroll-arrow:hover { color: var(--ink); }
 
+/* ── IN FOCUS ── */
+.section-infocus { padding-bottom: 0; }
+.section-infocus .section-divider { margin-bottom: 32px; }
+
+.infocus-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.infocus-card {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+}
+
+.infocus-card:last-child { border-bottom: none; }
+
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 28px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  transition: gap 0.25s;
+}
+
+.view-more:hover { gap: 14px; }
+
+.view-more svg {
+  width: 16px;
+  height: 16px;
+}
+.infocus-card:first-child { padding-top: 0; }
+
+.infocus-img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
+.infocus-text { flex: 1; }
+
+.infocus-category {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.infocus-title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.infocus-meta {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+}
+
+/* ── EDITORIALS ── */
+.section-editorials { padding-bottom: 90px; }
+
+.editorials-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.editorial-card {
+  cursor: pointer;
+}
+
+.editorial-category {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.editorial-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.editorial-text {
+  flex: 1;
+}
+
+.editorial-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.editorial-desc {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--ink-light);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  max-width: 480px;
+}
+
+.editorial-read {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-icon {
+  width: 13px;
+  height: 13px;
+  color: var(--ink-faint);
+  flex-shrink: 0;
+}
+
+.editorial-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 /* ── INTERVIEWS ── */
 .section-interviews { padding-top: 0; padding-bottom: 60px; }
 
@@ -321,9 +498,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .interview-body {
-  font-family: var(--mono);
-  font-size: 11.5px;
-  font-weight: 700;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 300;
   color: var(--ink-light);
   line-height: 1.75;
   margin-bottom: 14px;

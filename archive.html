@@ -10,81 +10,37 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <div class="nav-left">
-      <a href="#">Art</a>
-      <a href="#">Fashion</a>
-      <a href="#">Hospitality</a>
+      <a href="art.html">Art</a>
+      <a href="experience.html">Experience</a>
+      <a href="jewelry.html">Jewelry</a>
+      <a href="wellness.html">Wellness</a>
     </div>
     <div class="nav-logo">
       <a href="index.html"><img src="logo.png" alt="Élan" class="nav-logo-img" /></a>
     </div>
     <div class="nav-right">
-      <a href="#">Experience</a>
+      <a href="wine.html">Wine</a>
+      <a href="hospitality.html">Hospitality</a>
+      <span class="nav-divider"></span>
       <a href="archive.html">Archive</a>
       <a href="about.html">About</a>
     </div>
   </nav>
 
   <main class="archive-main">
-    <div class="archive-title-wrap" style="display:none;">
-      <h1 class="archive-title">Archive</h1>
+<div class="archive-search-wrap">
+      <input class="archive-search" type="text" placeholder="Search articles, topics, categories…" autocomplete="off" spellcheck="false" />
     </div>
     <div class="archive-list">
 
-      <!-- ROW 1 -->
-      <div class="archive-row" data-expanded="false">
-        <div class="archive-row-main">
-          <div class="archive-row-title">Fashion Markets</div>
-          <div class="archive-row-tags">
-            <span>Fashion</span><span>Luxury</span><span>Markets</span><span>Strategy</span>
-          </div>
-          <div class="archive-row-images">
-            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-6.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
-          </div>
-        </div>
-        <div class="archive-row-articles">
-          <a href="#" class="archive-article">How a Fashion House Scales Without Losing Its Edge <span>2024</span></a>
-          <a href="#" class="archive-article">The Pricing Power of Luxury Ready-to-Wear <span>2024</span></a>
-          <a href="#" class="archive-article">Fast Fashion's Quiet Retreat from the Market <span>2023</span></a>
-          <a href="#" class="archive-article">Heritage Brands and the Cost of Expansion <span>2023</span></a>
-        </div>
-      </div>
-
-      <!-- ROW 2 -->
-      <div class="archive-row" data-expanded="false">
-        <div class="archive-row-main">
-          <div class="archive-row-title">Art &amp; Finance</div>
-          <div class="archive-row-tags">
-            <span>Art</span><span>Finance</span><span>Culture</span><span>Investment</span>
-          </div>
-          <div class="archive-row-images">
-            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-3.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
-          </div>
-        </div>
-        <div class="archive-row-articles">
-          <a href="#" class="archive-article">Why Certain Artworks Become Valuable Assets <span>2024</span></a>
-          <a href="#" class="archive-article">The Secondary Market and What It Reveals <span>2024</span></a>
-          <a href="#" class="archive-article">Gallery Economics: Who Really Profits <span>2023</span></a>
-          <a href="#" class="archive-article">Art Fairs as Financial Events <span>2023</span></a>
-        </div>
-      </div>
-
-      <!-- ROW 3 -->
-      <div class="archive-row" data-expanded="false">
+      <!-- HOSPITALITY -->
+      <div id="hospitality" class="archive-row" data-expanded="false">
         <div class="archive-row-main">
           <div class="archive-row-title">Hospitality</div>
           <div class="archive-row-tags">
-            <span>Hospitality</span><span>Experience</span><span>Branding</span><span>Strategy</span>
+            <span>Hotels</span><span>Real Estate</span><span>Credit</span><span>Strategy</span>
           </div>
           <div class="archive-row-images">
             <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
@@ -95,65 +51,22 @@
           </div>
         </div>
         <div class="archive-row-articles">
-          <a href="#" class="archive-article">What Gives a Hotel Pricing Power <span>2024</span></a>
-          <a href="#" class="archive-article">The Economics of the Boutique Hotel <span>2024</span></a>
-          <a href="#" class="archive-article">How Hospitality Brands Build Loyalty <span>2023</span></a>
-          <a href="#" class="archive-article">Service as a Competitive Advantage <span>2023</span></a>
+          <a href="#" class="archive-article">The Boom of the Luxury Boutique Hotel Industry <span>Hospitality</span></a>
+          <a href="#" class="archive-article">Exclusivity, Quality, and Sustaining Margins: The Balancing Act <span>Hospitality</span></a>
+          <a href="#" class="archive-article">Private Members Clubs: What Happens When IYKYK Becomes Everyone Knows <span>Hospitality</span></a>
+          <a href="#" class="archive-article">The Rise of Mixed-Use Developments <span>Real Estate</span></a>
+          <a href="#" class="archive-article">The Blend of Hospitality and Wellness: Longevity Meets Luxury <span>Real Estate</span></a>
+          <a href="#" class="archive-article">The Role of Credit in Hospitality Finance <span>Finance</span></a>
+          <a href="#" class="archive-article">Equity vs Debt Financing in Luxury Real Estate <span>Finance</span></a>
         </div>
       </div>
 
-      <!-- ROW 4 -->
-      <div class="archive-row" data-expanded="false">
-        <div class="archive-row-main">
-          <div class="archive-row-title">Consumer Behaviour</div>
-          <div class="archive-row-tags">
-            <span>Consumer</span><span>Behaviour</span><span>Culture</span><span>Analysis</span>
-          </div>
-          <div class="archive-row-images">
-            <div class="archive-thumb"><img src="img-3.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
-          </div>
-        </div>
-        <div class="archive-row-articles">
-          <a href="#" class="archive-article">How Taste Becomes a Market Signal <span>2024</span></a>
-          <a href="#" class="archive-article">The Psychology Behind Premium Spending <span>2024</span></a>
-          <a href="#" class="archive-article">When Desire Drives Investment <span>2023</span></a>
-          <a href="#" class="archive-article">Cultural Capital and Its Commercial Consequences <span>2023</span></a>
-        </div>
-      </div>
-
-      <!-- ROW 5 -->
-      <div class="archive-row" data-expanded="false">
-        <div class="archive-row-main">
-          <div class="archive-row-title">Jewellery &amp; Craft</div>
-          <div class="archive-row-tags">
-            <span>Jewellery</span><span>Craft</span><span>Luxury</span><span>Production</span>
-          </div>
-          <div class="archive-row-images">
-            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-6.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
-            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
-          </div>
-        </div>
-        <div class="archive-row-articles">
-          <a href="#" class="archive-article">Craftsmanship as Brand Equity <span>2024</span></a>
-          <a href="#" class="archive-article">The Resale Value of Fine Jewellery <span>2024</span></a>
-          <a href="#" class="archive-article">Heritage Ateliers in a Mass Market World <span>2023</span></a>
-          <a href="#" class="archive-article">Material Scarcity and Perceived Value <span>2023</span></a>
-        </div>
-      </div>
-
-      <!-- ROW 6 -->
-      <div class="archive-row" data-expanded="false">
+      <!-- WINE & SPIRITS -->
+      <div id="wine" class="archive-row" data-expanded="false">
         <div class="archive-row-main">
           <div class="archive-row-title">Wine &amp; Spirits</div>
           <div class="archive-row-tags">
-            <span>Wine</span><span>Spirits</span><span>Markets</span>
+            <span>Wine</span><span>Spirits</span><span>Markets</span><span>Culture</span>
           </div>
           <div class="archive-row-images">
             <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
@@ -164,41 +77,133 @@
           </div>
         </div>
         <div class="archive-row-articles">
-          <a href="#" class="archive-article">Provenance and the Price of a Bottle <span>2024</span></a>
-          <a href="#" class="archive-article">The Investment Case for Fine Wine <span>2024</span></a>
-          <a href="#" class="archive-article">How Spirits Brands Build Prestige <span>2023</span></a>
-          <a href="#" class="archive-article">Terroir, Taste, and Market Value <span>2023</span></a>
+          <a href="#" class="archive-article">A Beginner's Guide to Buying Wine <span>Wine</span></a>
+          <a href="#" class="archive-article">Provenance and the Price of a Bottle <span>Wine</span></a>
+          <a href="#" class="archive-article">The Investment Case for Fine Wine <span>Finance</span></a>
+          <a href="#" class="archive-article">The Psychology of Getting a Table: An Anthropological Analysis of Nightlife <span>Culture</span></a>
+          <a href="#" class="archive-article">How Spirits Brands Build Prestige <span>Spirits</span></a>
+          <a href="#" class="archive-article">Terroir, Taste, and Market Value <span>Wine</span></a>
+        </div>
+      </div>
+
+      <!-- WELLNESS -->
+      <div id="wellness" class="archive-row" data-expanded="false">
+        <div class="archive-row-main">
+          <div class="archive-row-title">Wellness</div>
+          <div class="archive-row-tags">
+            <span>Longevity</span><span>Anti-Aging</span><span>Markets</span><span>PE</span>
+          </div>
+          <div class="archive-row-images">
+            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-3.webp" alt="" /></div>
+          </div>
+        </div>
+        <div class="archive-row-articles">
+          <a href="#" class="archive-article">Longevity Clinics in Germany: What People Are Paying and Why <span>Longevity</span></a>
+          <a href="#" class="archive-article">The Business of High-End Anti-Aging <span>Anti-Aging</span></a>
+          <a href="#" class="archive-article">Run Clubs and the Commodification of Community <span>Culture</span></a>
+          <a href="#" class="archive-article">Hyrox: The PE-Backed Fitness Empire Reshaping Competitive Wellness <span>PE</span></a>
+          <a href="#" class="archive-article">Luxury Beauty Treatments and the Premium Skincare Market <span>Beauty</span></a>
+          <a href="#" class="archive-article">Wellness as a Status Signal <span>Culture</span></a>
+        </div>
+      </div>
+
+      <!-- EXPERIENTIAL -->
+      <div id="experiential" class="archive-row" data-expanded="false">
+        <div class="archive-row-main">
+          <div class="archive-row-title">Experiential</div>
+          <div class="archive-row-tags">
+            <span>Live Events</span><span>Broadway</span><span>Ballet</span><span>PE</span>
+          </div>
+          <div class="archive-row-images">
+            <div class="archive-thumb"><img src="img-3.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
+          </div>
+        </div>
+        <div class="archive-row-articles">
+          <a href="#" class="archive-article">Broadway Boom: Tradition or Profit? An Investigation into a Record-Breaking Season <span>Broadway</span></a>
+          <a href="#" class="archive-article">Business Behind Ballet: Donations, Ticket Sales, and the Cost of a Pointe Shoe <span>Ballet</span></a>
+          <a href="#" class="archive-article">Private Equity and Entertainment: Where the Money Is Going <span>PE</span></a>
+          <a href="#" class="archive-article">Jazz and the City: The Economics of an Endangered Art Form <span>Jazz</span></a>
+          <a href="#" class="archive-article">Live Nation's Dominance and What It Means for Independent Venues <span>Live Events</span></a>
+          <a href="#" class="archive-article">Immersive Art Shows: Experience Economy or Cultural Dilution? <span>Culture</span></a>
+          <a href="#" class="archive-article">Burlesque, Nightlife, and the Underground Economy of Performance <span>Culture</span></a>
+        </div>
+      </div>
+
+      <!-- FASHION & JEWELRY -->
+      <div id="fashion" class="archive-row" data-expanded="false">
+        <div class="archive-row-main">
+          <div class="archive-row-title">Fashion &amp; Jewelry</div>
+          <div class="archive-row-tags">
+            <span>Fashion</span><span>Jewelry</span><span>Markets</span><span>Ethics</span>
+          </div>
+          <div class="archive-row-images">
+            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-4.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-6.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
+          </div>
+        </div>
+        <div class="archive-row-articles">
+          <a href="#" class="archive-article">Can You Ever Justify Luxury? An Investigation on Cost Per Wear <span>Fashion</span></a>
+          <a href="#" class="archive-article">The S&amp;P 500 and Fashion: Who Is Worth Investing In? <span>Markets</span></a>
+          <a href="#" class="archive-article">The Business Cycle and the Fashion Cycle: What Macroeconomics Tells Us <span>Markets</span></a>
+          <a href="#" class="archive-article">How a Fashion House Scales Without Losing Its Edge <span>Strategy</span></a>
+          <a href="#" class="archive-article">Controversial Jewels: The Industry Behind Looted Pieces in Hollywood <span>Ethics</span></a>
+          <a href="#" class="archive-article">Craftsmanship as Brand Equity <span>Jewelry</span></a>
+        </div>
+      </div>
+
+      <!-- ART -->
+      <div id="art" class="archive-row" data-expanded="false">
+        <div class="archive-row-main">
+          <div class="archive-row-title">Art</div>
+          <div class="archive-row-tags">
+            <span>Art Market</span><span>Finance</span><span>Education</span><span>Culture</span>
+          </div>
+          <div class="archive-row-images">
+            <div class="archive-thumb"><img src="img-5.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-1.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-2.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-3.webp" alt="" /></div>
+            <div class="archive-thumb"><img src="img-7.webp" alt="" /></div>
+          </div>
+        </div>
+        <div class="archive-row-articles">
+          <a href="#" class="archive-article">Is Time Money? Artist Compensation in the 21st Century <span>Finance</span></a>
+          <a href="#" class="archive-article">Art College vs Becoming an Artist: The Opportunity Cost <span>Education</span></a>
+          <a href="#" class="archive-article">Why Certain Artworks Become Valuable Assets <span>Art Market</span></a>
+          <a href="#" class="archive-article">The Secondary Market and What It Reveals <span>Art Market</span></a>
+          <a href="#" class="archive-article">Gallery Economics: Who Really Profits <span>Finance</span></a>
+          <a href="#" class="archive-article">Art Market Recap: Key Transactions, Exhibitions, and News <span>Art Market</span></a>
         </div>
       </div>
 
     </div>
   </main>
 
-  <!-- BOTTOM BAR -->
-  <div class="archive-bar">
-    <span class="archive-bar-brand">Élan Magazine</span>
-    <div class="archive-bar-views">
-      <button class="archive-view-btn active">List View</button>
-      <button class="archive-view-btn">Editorial View</button>
-      <button class="archive-view-btn">Grid View</button>
-    </div>
-    <button class="archive-reset">Reset</button>
-  </div>
-
   <script>
     document.querySelectorAll('.archive-row').forEach(row => {
-      row.addEventListener('mouseenter', () => {
-        row.classList.add('expanded');
-      });
-      row.addEventListener('mouseleave', () => {
-        row.classList.remove('expanded');
-      });
+      row.addEventListener('mouseenter', () => row.classList.add('expanded'));
+      row.addEventListener('mouseleave', () => row.classList.remove('expanded'));
     });
 
-    document.querySelectorAll('.archive-view-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.archive-view-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+    const searchInput = document.querySelector('.archive-search');
+    const rows = document.querySelectorAll('.archive-row');
+
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase().trim();
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = (!q || text.includes(q)) ? '' : 'none';
       });
     });
   </script>

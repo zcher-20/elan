@@ -26,7 +26,7 @@
 }
 
 .about-num {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -44,7 +44,7 @@
 }
 
 .about-body {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 11px;
   font-weight: 700;
   color: var(--ink-light);
@@ -80,7 +80,7 @@
 }
 
 .about-ethos-label {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -89,7 +89,7 @@
 }
 
 .about-ethos-body {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 11px;
   font-weight: 700;
   color: var(--ink-light);
@@ -114,7 +114,7 @@
 }
 
 .about-contact-sub {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 15px;
   font-weight: 700;
   color: var(--ink-faint);
@@ -140,7 +140,7 @@
 }
 
 .about-contact-link {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 13px;
   font-weight: 700;
   color: var(--ink-light);
