@@ -30,79 +30,111 @@
     </div>
   </nav>
 
+  <!-- MARKET TICKER HEADER -->
+  <div class="ticker-bar" id="tickerBar">
+    <div class="ticker-item" data-symbol="MC.PA"  data-name="LVMH"></div>
+    <div class="ticker-item" data-symbol="MAR"    data-name="Marriott"></div>
+    <div class="ticker-item" data-symbol="CFR.SW" data-name="Richemont"></div>
+    <div class="ticker-item" data-symbol="RMS.PA" data-name="Hermès"></div>
+  </div>
+
   <main>
 
     <!-- FEATURES -->
     <section class="section section-editorials">
-      <div class="section-label">Articles</div>
+      <div class="hero-grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="hero-side hero-side-left">
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Fashion</p>
+              <h2 class="side-card-title">Can You Ever Justify Luxury? An Investigation on Cost Per Wear</h2>
+              <p class="side-card-byline">By Scarlett Playfair</p>
+            </div>
+            <img class="side-card-img" src="img-4.webp" alt="Fashion" />
+          </article>
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Art &amp; Finance</p>
+              <h2 class="side-card-title">Is Time Money? Artist Compensation in the 21st Century</h2>
+              <p class="side-card-byline">By Prim Atikarnbodee</p>
+            </div>
+            <img class="side-card-img" src="img-1.webp" alt="Art" />
+          </article>
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Wine &amp; Spirits</p>
+              <h2 class="side-card-title">The Investment Case for Fine Wine</h2>
+              <p class="side-card-byline">By Scarlett Playfair</p>
+            </div>
+            <img class="side-card-img" src="img-3.webp" alt="Wine" />
+          </article>
+
+        </div>
+
+        <!-- CENTER FEATURED -->
+        <article class="hero-featured">
+          <img class="hero-featured-img" src="img-5.webp" alt="Featured" />
+          <div class="hero-featured-text">
+            <p class="side-card-category">Hospitality</p>
+            <h2 class="hero-featured-title">Private Members Clubs: What Happens When IYKYK Becomes Everyone Knows</h2>
+            <p class="side-card-byline">By Prim Atikarnbodee</p>
+          </div>
+        </article>
+
+        <!-- RIGHT COLUMN -->
+        <div class="hero-side hero-side-right">
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Experiential</p>
+              <h2 class="side-card-title">Broadway Boom: Tradition or Profit? An Investigation into a Record-Breaking Season</h2>
+              <p class="side-card-byline">By Scarlett Playfair</p>
+            </div>
+            <img class="side-card-img" src="img-3.webp" alt="Experience" />
+          </article>
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Wellness</p>
+              <h2 class="side-card-title">Longevity Clinics in Germany: What People Are Paying and Why</h2>
+              <p class="side-card-byline">By Prim Atikarnbodee</p>
+            </div>
+            <img class="side-card-img" src="img-6.webp" alt="Wellness" />
+          </article>
+
+          <article class="side-card">
+            <div class="side-card-text">
+              <p class="side-card-category">Hospitality</p>
+              <h2 class="side-card-title">The Boom of the Luxury Boutique Hotel Industry</h2>
+              <p class="side-card-byline">By Scarlett Playfair</p>
+            </div>
+            <img class="side-card-img" src="img-2.webp" alt="Hospitality" />
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARKET TICKER -->
+    <section class="section section-markets">
+      <div class="section-label">Markets</div>
       <div class="section-divider"></div>
-
-      <div class="editorials-list">
-
-        <article class="editorial-card">
-          <div class="editorial-top">
-            <span class="editorial-category">Fashion</span>
-          </div>
-          <div class="editorial-body">
-            <img class="editorial-img" src="img-4.webp" alt="Fashion" />
-            <div class="editorial-text">
-              <h2 class="editorial-title">Can You Ever Justify Luxury? An Investigation on Cost Per Wear</h2>
-              <p class="editorial-desc">The case for the capsule wardrobe has been made many times over. But does the math actually hold up — and what does it reveal about how we assign value to what we wear?</p>
-              <p class="editorial-read"><svg class="read-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1"/><path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg> 6 min read</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="editorial-card">
-          <div class="editorial-top">
-            <span class="editorial-category">Art &amp; Finance</span>
-          </div>
-          <div class="editorial-body">
-            <img class="editorial-img" src="img-1.webp" alt="Art" />
-            <div class="editorial-text">
-              <h2 class="editorial-title">Is Time Money? Artist Compensation in the 21st Century</h2>
-              <p class="editorial-desc">From gallery commissions to streaming residuals, the economics of making art have never been more contested. We map the gap between cultural value and financial return.</p>
-              <p class="editorial-read"><svg class="read-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1"/><path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg> 5 min read</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="editorial-card">
-          <div class="editorial-top">
-            <span class="editorial-category">Hospitality</span>
-          </div>
-          <div class="editorial-body">
-            <img class="editorial-img" src="img-2.webp" alt="Hospitality" />
-            <div class="editorial-text">
-              <h2 class="editorial-title">Private Members Clubs: What Happens When IYKYK Becomes Everyone Knows</h2>
-              <p class="editorial-desc">Exclusivity is the product. But as waitlists grow and coverage proliferates, we ask whether the private members club model can survive its own popularity.</p>
-              <p class="editorial-read"><svg class="read-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1"/><path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg> 7 min read</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="editorial-card">
-          <div class="editorial-top">
-            <span class="editorial-category">Experiential</span>
-          </div>
-          <div class="editorial-body">
-            <img class="editorial-img" src="img-3.webp" alt="Experience" />
-            <div class="editorial-text">
-              <h2 class="editorial-title">Broadway Boom: Tradition or Profit? An Investigation into a Record-Breaking Season</h2>
-              <p class="editorial-desc">Broadway has never sold more tickets. But behind the sellouts lies a complex calculus of donor funding, star casting, and the question of who the theatre is really for.</p>
-              <p class="editorial-read"><svg class="read-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1"/><path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg> 4 min read</p>
-            </div>
-          </div>
-        </article>
-
+      <div class="markets-grid" id="marketsGrid">
+        <div class="market-card" data-symbol="MC.PA"  data-name="LVMH"></div>
+        <div class="market-card" data-symbol="MAR"    data-name="Marriott International"></div>
+        <div class="market-card" data-symbol="CFR.SW" data-name="Richemont"></div>
+        <div class="market-card" data-symbol="RMS.PA" data-name="Hermès"></div>
       </div>
     </section>
 
     <!-- BRIEFINGS -->
     <section class="section section-interviews">
-      <div class="section-label">Briefings</div>
-      <div class="section-divider"></div>
-
       <div class="interviews-grid">
 
         <article class="interview-card">
@@ -112,8 +144,8 @@
         </article>
 
         <article class="interview-card">
-          <h3 class="interview-title">Hyrox: The PE-Backed Fitness Empire Reshaping Competitive Wellness</h3>
-          <p class="interview-body">From niche race to global franchise: how private equity spotted a gap in the fitness market and built a scalable competition format around the aspiration of ordinary athleticism.</p>
+          <h3 class="interview-title">The Business Cycle and the Fashion Cycle: What Macroeconomics Tells Us</h3>
+          <p class="interview-body">Hemlines and recessions. Logo mania and bull markets. The relationship between macroeconomic conditions and consumer taste in luxury is more measurable than it might seem.</p>
           <a href="#" class="read-more">Read More &rarr;</a>
         </article>
 
@@ -208,6 +240,104 @@
         row.scrollBy({ left: -340, behavior: 'smooth' });
       });
     }
+  </script>
+
+  <script>
+    async function fetchStockData(symbol) {
+      const yf = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=5m&range=1d`;
+      const res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(yf)}`);
+      return await res.json();
+    }
+
+    async function loadTickerBar() {
+      const items = document.querySelectorAll('.ticker-item[data-symbol]');
+      async function fetchTicker(item) {
+        const symbol = item.dataset.symbol;
+        const name = item.dataset.name;
+        const ticker = symbol.split('.')[0];
+        try {
+          const data = await fetchStockData(symbol);
+          const result = data.chart.result[0];
+          const meta = result.meta;
+          const price = meta.regularMarketPrice;
+          const prev = meta.chartPreviousClose || meta.previousClose;
+          const change = ((price - prev) / prev) * 100;
+          const closes = (result.indicators.quote[0].close || []).filter(v => v != null);
+          const min = Math.min(...closes), max = Math.max(...closes);
+          const W = 80, H = 24;
+          const pts = closes.map((v, i) => {
+            const x = (i / (closes.length - 1)) * W;
+            const y = H - ((v - min) / ((max - min) || 1)) * H;
+            return `${x.toFixed(1)},${y.toFixed(1)}`;
+          }).join(' ');
+          const up = change >= 0;
+          item.innerHTML = `
+            <span class="ti-name">${name}</span>
+            <svg class="ti-spark" viewBox="0 0 80 24" preserveAspectRatio="none">
+              <polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+            <span class="ti-price">${price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+            <span class="ti-change ${up ? 'up' : 'down'}">${up ? '+' : ''}${change.toFixed(2)}%</span>`;
+        } catch(e) {
+          item.innerHTML = `<span class="ti-name">${name}</span><span class="ti-price">—</span>`;
+        }
+      }
+      Promise.all([...items].map(fetchTicker));
+    }
+
+    async function loadMarkets() {
+      const cards = document.querySelectorAll('.market-card[data-symbol]');
+
+      async function fetchCard(card) {
+        const symbol = card.dataset.symbol;
+        const name = card.dataset.name;
+        const ticker = symbol.split('.')[0];
+        try {
+          const data = await fetchStockData(symbol);
+          const result = data.chart.result[0];
+          const meta = result.meta;
+          const price = meta.regularMarketPrice;
+          const prev = meta.chartPreviousClose || meta.previousClose;
+          const change = ((price - prev) / prev) * 100;
+          const closes = (result.indicators.quote[0].close || []).filter(v => v != null);
+
+          const min = Math.min(...closes);
+          const max = Math.max(...closes);
+          const W = 200, H = 52;
+          const pts = closes.map((v, i) => {
+            const x = (i / (closes.length - 1)) * W;
+            const y = H - ((v - min) / ((max - min) || 1)) * H;
+            return `${x.toFixed(1)},${y.toFixed(1)}`;
+          }).join(' ');
+
+          const up = change >= 0;
+          card.innerHTML = `
+            <div class="market-top">
+              <span class="market-ticker">${ticker}</span>
+              <span class="market-name">${name}</span>
+            </div>
+            <div class="market-mid">
+              <span class="market-price">${price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+              <span class="market-change ${up ? 'up' : 'down'}">${up ? '+' : ''}${change.toFixed(2)}%</span>
+            </div>
+            <svg class="market-spark" viewBox="0 0 200 52" preserveAspectRatio="none">
+              <polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>`;
+        } catch (e) {
+          console.error(`Failed to load ${symbol}:`, e);
+          card.innerHTML = `
+            <div class="market-top">
+              <span class="market-ticker">${ticker}</span>
+              <span class="market-name">${name}</span>
+            </div>
+            <p class="market-error">Data unavailable</p>`;
+        }
+      }
+
+      Promise.all([...cards].map(fetchCard));
+    }
+    loadMarkets();
+    loadTickerBar();
   </script>
 
 </body>
