@@ -244,9 +244,15 @@
 
   <script>
     async function fetchStockData(symbol) {
-      const yf = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=5m&range=1d`;
-      const res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(yf)}`);
-      return await res.json();
+      const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+      if (isLocal) {
+        const yf = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=5m&range=1d`;
+        const res = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(yf)}`);
+        return await res.json();
+      } else {
+        const res = await fetch(`/api/stock?symbol=${encodeURIComponent(symbol)}`);
+        return await res.json();
+      }
     }
 
     async function loadTickerBar() {
