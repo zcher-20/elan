@@ -1,0 +1,365 @@
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #fefefe;
+  --ink: #1a1916;
+  --ink-light: #6b6660;
+  --ink-faint: #9e9992;
+  --rule: #1a1916;
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: 'Times New Roman', Times, serif;
+  --mono: 'Courier New', Courier, monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ── */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 48px;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-left a, .nav-right a {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  transition: color 0.2s;
+}
+
+.nav-left a:hover, .nav-right a:hover { color: var(--ink); }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+/* ── PAGE HEADER ── */
+.page-header {
+  text-align: center;
+  padding: 36px 48px 28px;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: 0;
+}
+
+.title-sans {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.title-italic {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.title-rule {
+  display: inline-block;
+  width: 56px;
+  height: 1px;
+  background: var(--ink);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: 0 48px 90px;
+}
+
+.section:first-of-type {
+  padding-top: 48px;
+}
+
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--rule);
+  margin-top: 12px;
+  margin-bottom: 90px;
+}
+
+/* ── SCROLL ROW ── */
+.scroll-row-wrap {
+  position: relative;
+}
+
+.scroll-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 4px;
+}
+
+.scroll-row::-webkit-scrollbar { display: none; }
+
+.scroll-fade-right {
+  position: absolute;
+  top: 0; right: 0;
+  width: 80px;
+  height: calc(100% - 4px);
+  background: linear-gradient(to right, transparent, var(--bg));
+  pointer-events: none;
+}
+
+/* ── CREATOR CARDS ── */
+.creators-row {
+  align-items: flex-start;
+}
+
+.creator-card {
+  flex: 0 0 auto;
+  width: 175px;
+  cursor: pointer;
+}
+
+.creator-img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.creator-meta { padding-top: 2px; }
+
+.creator-name {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+
+.creator-date {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+/* ── LOOKBOOKS SECTION ── */
+.section-lookbooks {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 60px;
+}
+
+.lookbooks-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.lookbooks-text {
+  flex: 0 0 300px;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.lookbooks-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.lookbooks-title {
+  font-family: var(--sans);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.lookbooks-sub {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.lookbooks-scroll-wrap {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+}
+
+.lookbooks-row {
+  gap: 14px;
+  padding-left: 10px;
+  padding-right: 80px;
+  align-items: flex-start;
+}
+
+.lookbook-card {
+  flex: 0 0 auto;
+  width: 220px;
+  cursor: pointer;
+}
+
+.lookbook-img {
+  width: 220px;
+  height: 340px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.lookbook-caption {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+}
+
+/* Arrow button */
+.scroll-arrow {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--ink-light);
+  z-index: 10;
+  padding: 8px 12px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.scroll-arrow:hover { color: var(--ink); }
+
+/* ── INTERVIEWS ── */
+.section-interviews { padding-top: 0; padding-bottom: 60px; }
+
+.interviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.interview-title {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.interview-body {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-light);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.interview-body em { font-style: italic; }
+
+.read-more {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  text-transform: capitalize;
+  transition: letter-spacing 0.25s;
+}
+
+.read-more:hover { letter-spacing: 0.28em; }
+
+/* ── PLACEHOLDER IMAGES ── */
+.placeholder-img {
+  background-color: #ccc;
+  display: block;
+}
+
+.img-portrait  { background-color: #b8bab5; }
+.img-dark      { background-color: #2e2e2e; }
+.img-warm      { background-color: #8b4a3c; }
+.img-light     { background-color: #ddd8ce; }
+.img-mid       { background-color: #9fa89e; }
+.img-nature    { background-color: #c4bca8; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav { padding: 18px 24px; }
+  .section { padding-left: 24px; padding-right: 24px; }
+  .interviews-grid { grid-template-columns: 1fr; gap: 36px; }
+  .lookbooks-inner { flex-direction: column; align-items: flex-start; }
+  .lookbooks-text { padding: 0 24px 24px; text-align: left; flex: none; }
+}
